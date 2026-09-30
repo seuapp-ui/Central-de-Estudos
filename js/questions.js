@@ -349,7 +349,7 @@ const QUESTIONS = [
     "subject": "Português",
     "topic": "Concordância verbal",
     "difficulty": "Fácil",
-    "q": "Assinale a frase correta.",
+    "q": "Assinale a frase correta quanto à concordância verbal.",
     "a": [
       "Os alunos estudam.",
       "Os alunos estuda.",
@@ -799,7 +799,7 @@ const QUESTIONS = [
     "subject": "Português",
     "topic": "Concordância verbal",
     "difficulty": "Difícil",
-    "q": "Assinale a frase correta.",
+    "q": "Quanto ao verbo “fazer” indicando tempo decorrido, assinale a frase correta.",
     "a": [
       "Faz dois anos que estudo.",
       "Fazem dois anos que estudo.",
@@ -1624,15 +1624,15 @@ const QUESTIONS = [
     "subject": "Matemática",
     "topic": "Porcentagem",
     "difficulty": "Fácil",
-    "q": "Quanto é 15% de 200?",
+    "q": "Uma taxa de inscrição de R$ 200 recebe desconto de 15%. Qual é o valor do desconto?",
     "a": [
-      "30",
-      "45",
-      "170",
-      "15"
+      "R$ 30",
+      "R$ 45",
+      "R$ 170",
+      "R$ 15"
     ],
     "correct": 0,
-    "explain": "15/100 × 200 = 30."
+    "explain": "15% de 200 = 0,15 × 200 = 30. O desconto é de R$ 30."
   },
   {
     "id": 110,

@@ -1,50 +1,40 @@
-# Central de Estudos v0.1.6 — Conteúdo + Prática
+# Central de Estudos 2026 v0.2.1
 
-Sistema de estudo em HTML/CSS/JavaScript para vestibulinho e concursos de prefeitura, baseado no edital informado pelo usuário.
+Aplicativo offline/PWA em HTML, CSS e JavaScript para estudo de vestibulinho e concursos públicos.
 
-## Novidades 0.1.0 (antes "v4.1")
-- Aulas curtas por assunto, antes das questões.
-- Exemplos e pegadinhas.
-- Flashcards clicáveis.
-- Plano de estudo adaptativo.
-- Sessão diária com priorização de assuntos.
-- Conteúdo específico para Português, Matemática, ACS e Orientador Social.
-- Links para fontes oficiais em temas que precisam de atualização.
-- Mantidos simulados, revisão inteligente, XP, histórico, metas e PWA.
+
+## Correção v0.2.1 — celular
+- Menu lateral agora abre e fecha ao tocar novamente no botão ☰/✕.
+- Fecha ao tocar fora do painel ou escolher uma página.
+- Cabeçalho permanece acessível enquanto o menu está aberto.
+- Barra lateral tem rolagem própria em telas pequenas.
+
+## O que mudou na v0.2.0
+- Banco ampliado de **258 para 392 questões**.
+- Nova matéria **Informática**: Windows 11, arquivos, hardware, internet, e-mail, segurança, backup/nuvem, Word, Excel, PowerPoint, redes, LGPD, IA e acessibilidade digital.
+- Nova matéria **Conhecimentos Gerais**: Brasil e regiões, geografia física, história, Constituição/cidadania, Administração Pública, meio ambiente, ciência/saúde, economia, gráficos e dados, direitos humanos, atualidades 2026 e ética no serviço público.
+- **32 novas aulas**; total atual de 107 aulas.
+- Conteúdo 2026 reforçado para **ACS**: calendário nacional de vacinação 2026, Lei nº 11.350/2006 e proteção de dados em saúde.
+- Conteúdo 2026 reforçado para **Orientador Social**: LOAS, atualização do ECA pela Lei nº 15.450/2026 e PAIF/CRAS.
+- Nova tela **Atualizações 2026**, com links para fontes oficiais.
+- Dashboard reorganizado com progresso por matéria, próxima ação recomendada e atalhos rápidos.
+- Tela de estudo com busca, filtros, status da questão e treino recomendado.
+- Plano diário passa a considerar Português, Matemática, Informática, Conhecimentos Gerais e o cargo escolhido.
+- Simulado de prefeitura virou um **modelo abrangente de treino** e inclui as novas matérias; o app avisa para conferir o edital real.
+- Em simulados, a alternativa correta **não é mais revelada imediatamente**. O resultado aparece no gabarito final.
+- A sequência (streak) só aumenta quando o usuário responde questão ou marca uma aula como estudada. Abrir o app não conta mais como estudo.
+- Melhorias de responsividade, acessibilidade visual, cartões, filtros, foco e estados de resposta.
+
+## Fontes oficiais destacadas
+- Ministério da Saúde — Calendário Nacional de Vacinação / PNI 2026.
+- Planalto — Lei nº 11.350/2006 (ACS/ACE), Constituição, LGPD e Lei nº 15.352/2026, ECA e Lei nº 15.450/2026, LOAS e LBI.
+- MDS — PAIF/CRAS e Proteção Social Básica.
+- Polícia Federal — cartilhas de segurança da informação atualizadas em 2026.
+- Microsoft Support — conceitos e atalhos atuais do Windows 11.
+- IBGE — divisão territorial e referências geográficas.
 
 ## Como executar
-Abra `index.html` em um servidor local ou publique a pasta no GitHub Pages.
+Abra `index.html` por um servidor local ou publique a pasta no GitHub Pages. O service worker permite uso offline depois do primeiro carregamento.
 
-## Correções v0.1.1
-- Página **Desempenho** não quebra mais (erro de variável em `statistics()`).
-- Alternativas agora são **embaralhadas** (antes a resposta certa era sempre a letra A). A ordem é fixa por questão; o progresso salvo continua válido.
-- Removidas 100 questões duplicadas (banco: 200 questões únicas) e corrigidos tópicos/alternativas inconsistentes.
-- Simulados e "Refazer" funcionam com questões já respondidas; erros de simulado alimentam a Revisão inteligente.
-- Datas (meta diária e sequência) usam o fuso local, não UTC.
-- XP só é concedido enquanto a questão ainda não foi acertada (evita farm repetindo a mesma questão).
-- Quizzes sem questões não travam mais a tela.
-- PWA: service worker completo (inclui `lessons.js`, funciona offline, atualiza sozinho), manifest e ícones.
-- Aviso discreto (toast) no lugar de `alert`, e selo "estudado" nas aulas.
-
-## Próximos passos sugeridos
-- Mais questões para tópicos com 1–2 itens e aulas para os tópicos do edital ainda sem aula.
-- Exportar/importar progresso (hoje fica só no `localStorage`).
-
-## v0.1.2
-- Novo `js/extra.js`: 17 aulas e 20 questões para tópicos de ACS e Orientador Social que não tinham cobertura.
-
-## v0.1.3
-- Novo `js/extra2.js`: 21 aulas e 22 questões de Português e Matemática.
-
-## v0.1.4
-- Botões **Exportar/Importar progresso** (arquivo JSON) no menu lateral.
-- `js/extra3.js`: mais 17 questões.
-
-## v0.1.5
-- **Revisão espaçada**: questões erradas voltam em 1, 3, 7 e 14 dias (cartão no Dashboard e na Revisão).
-- Corrigido: após "Zerar progresso", os dados antigos podiam reaparecer (objetos compartilhados no estado padrão).
-
-## v0.1.6
-- **Simulado por tópico** (matéria + tópico + nº de questões) com tempo.
-- **Gabarito comentado** ao final de simulados e provas.
-- Versionamento renumerado: a antiga "v4.1.5" passa a ser a **0.1.5**.
+## Observação importante
+Leis, calendários de vacinação, editais e atualidades podem mudar. O conteúdo marcado como 2026 foi conferido para esta versão, mas antes da prova o usuário deve sempre comparar com o edital e com a fonte oficial indicada.
